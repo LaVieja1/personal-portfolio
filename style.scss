@@ -22,18 +22,22 @@ body {
 }
 
 header {
+    background-color: $background-header;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    padding: 40px 100px;
+    /*max-width: 1200px;*/
+    padding: 40px 300px;
+    gap: 10px;
 
     img {
         max-width: 220px;
         min-height: auto;
+        border-radius: 0;
     }
 
     .about-me {
+        background-color: $background;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -61,6 +65,10 @@ header {
             }
         }
     }
+}
+
+img {
+    border-radius: 5%;
 }
 
 a, a:visited {
@@ -116,6 +124,7 @@ main {
                 align-items: center;
                 width: 100%;
                 padding: 10px;
+                gap: 10px;
 
                 .name {
                     width: 100%;
@@ -165,7 +174,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 250px;
 
     .info {
         display: flex;
