@@ -1,8 +1,63 @@
+$roboto: Roboto, sans-serif;
+$oxygen: Oxygen, sans-serif;
+$background: #d6d6d6;
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    padding: 20px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $background;
+    font-family: $roboto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 220px;
+        min-height: auto;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 80px;
+        box-shadow: 5px 5px 10px rgb(110, 110, 110);
+        text-align: justify;
+        font-size: 20px;
+
+        h1 {
+            font-family: $oxygen;
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
 }
