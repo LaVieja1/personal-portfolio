@@ -1,6 +1,7 @@
 $roboto: Roboto, sans-serif;
 $oxygen: Oxygen, sans-serif;
 $background: #d6d6d6;
+$background-project: #46ad9f80;
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@ $background: #d6d6d6;
 }
 
 body {
-    padding: 40px 60px;
+    padding: 40px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,4 +61,81 @@ header {
 a, a:visited {
     color: black;
     text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+        text-align: left;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 300px;
+            height: auto;
+            background-color: $background-project;
+            box-shadow: 5px 10px 10px rgb(110, 110, 110);
+            border-radius: 2%;
+            padding: 20px;
+
+            .project-img {
+                max-width: 300px;
+                height: 140px;
+            }
+
+            .project-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+
+                .name {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .project-links {
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 20px;
+
+                        i {
+                            font-size: 28px;
+                        }
+
+                        img {
+                            width: 28px;
+                            height: 32px;
+                        }
+                    }
+                }
+
+                .description {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: justify;
+                }
+            }
+        }
+    }
 }

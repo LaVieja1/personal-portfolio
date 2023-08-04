@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 40px 60px;
+  padding: 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,4 +51,70 @@ header .about-me .links i {
 a, a:visited {
   color: black;
   text-decoration: none;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main h1 {
+  text-align: left;
+}
+main .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+main .projects .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  height: auto;
+  background-color: rgba(70, 173, 159, 0.5019607843);
+  box-shadow: 5px 10px 10px rgb(110, 110, 110);
+  border-radius: 2%;
+  padding: 20px;
+}
+main .projects .project .project-img {
+  max-width: 300px;
+  height: 140px;
+}
+main .projects .project .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+main .projects .project .project-info .name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .projects .project .project-info .name .project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .projects .project .project-info .name .project-links i {
+  font-size: 28px;
+}
+main .projects .project .project-info .name .project-links img {
+  width: 28px;
+  height: 32px;
+}
+main .projects .project .project-info .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
