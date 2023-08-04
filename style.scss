@@ -1,7 +1,9 @@
 $roboto: Roboto, sans-serif;
 $oxygen: Oxygen, sans-serif;
 $background: #d6d6d6;
+$background-header: #34c7b380;
 $background-project: #46ad9f80;
+$background-footer: #43dbc780;
 
 * {
     margin: 0;
@@ -9,7 +11,7 @@ $background-project: #46ad9f80;
 }
 
 body {
-    padding: 40px 100px;
+    /*padding: 40px 100px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +25,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    padding: 40px 100px;
 
     img {
         max-width: 220px;
@@ -42,6 +46,7 @@ header {
 
         h1 {
             font-family: $oxygen;
+            text-decoration: underline;
         }
 
         .links {
@@ -61,18 +66,25 @@ header {
 a, a:visited {
     color: black;
     text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.2);
 }
 
 main {
+    padding: 40px 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    transition: transform 1s ease-in-out;
 
     h1 {
-        text-align: left;
+        font-family: $oxygen;
     }
 
     .projects {
@@ -111,6 +123,11 @@ main {
                     justify-content: space-between;
                     align-items: center;
 
+                    h3 {
+                        font-family: $oxygen;
+                        font-size: 28px;
+                    }
+
                     .project-links {
 
                         display: flex;
@@ -134,8 +151,66 @@ main {
                     justify-content: center;
                     align-items: center;
                     text-align: justify;
+                    font-size: 16px;
                 }
             }
         }
+    }
+}
+
+footer {
+    padding: 40px 100px;
+    background-color: $background-footer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 30px;
+
+        h1 {
+            font-family: $oxygen;
+            text-decoration: underline;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .email {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+
+            img {
+                max-width: 32px;
+                min-height: auto;
+            }
+        }
+
+        .contact-links {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+    
+            i {
+                font-size: 48px;
+            }
+        }
+    }
+
+    img {
+        max-width: 600px;
+        min-height: auto;
     }
 }
