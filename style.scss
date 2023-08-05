@@ -1,9 +1,10 @@
 $roboto: Roboto, sans-serif;
 $oxygen: Oxygen, sans-serif;
-$background: #d6d6d6;
-$background-header: #34c7b380;
-$background-project: #46ad9f80;
-$background-footer: #43dbc780;
+$background: #141414;
+$background-read: #fff;
+$background-header: #6c34c780;
+$background-project: #6f2dda80;
+$background-footer: #782cf180;
 
 * {
     margin: 0;
@@ -19,6 +20,7 @@ body {
     gap: 20px;
     background-color: $background;
     font-family: $roboto;
+    color: #fff;
 }
 
 header {
@@ -31,8 +33,9 @@ header {
     gap: 10px;
 
     img {
-        max-width: 220px;
+        max-width: 300px;
         min-height: auto;
+        aspect-ratio: 1/1;
     }
 
     .about-me {
@@ -43,7 +46,7 @@ header {
         align-items: center;
         gap: 20px;
         padding: 20px 80px;
-        box-shadow: 5px 5px 10px rgb(110, 110, 110);
+        box-shadow: 5px 5px 10px rgb(38, 54, 189);
         text-align: justify;
         font-size: 20px;
         border-radius: 2%;
@@ -64,6 +67,10 @@ header {
                 font-size: 32px;
             }
         }
+
+        span {
+            font-weight: bold;
+        }
     }
 }
 
@@ -72,7 +79,7 @@ img {
 }
 
 a, a:visited {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
 }
@@ -108,7 +115,7 @@ main {
             max-width: 300px;
             height: auto;
             background-color: $background-project;
-            box-shadow: 5px 10px 10px rgb(110, 110, 110);
+            box-shadow: 5px 10px 10px rgb(38, 54, 189);
             border-radius: 2%;
             padding: 20px;
 
@@ -151,6 +158,7 @@ main {
                         img {
                             width: 28px;
                             height: 32px;
+                            filter: invert(95%) sepia(0%) saturate(7500%) hue-rotate(325deg) brightness(106%) contrast(100%);
                         }
                     }
                 }
@@ -175,6 +183,12 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 250px;
+
+    .footer-img {
+        max-width: 400px;
+        min-height: auto;
+        box-shadow: 5px 10px 10px rgb(38, 54, 189);
+    }
 
     .info {
         display: flex;
@@ -202,6 +216,7 @@ footer {
             img {
                 max-width: 32px;
                 min-height: auto;
+                filter: invert(95%) sepia(0%) saturate(7500%) hue-rotate(325deg) brightness(106%) contrast(100%);
             }
         }
 
@@ -217,10 +232,5 @@ footer {
                 font-size: 48px;
             }
         }
-    }
-
-    img {
-        max-width: 400px;
-        min-height: auto;
     }
 }
