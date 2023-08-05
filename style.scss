@@ -1,10 +1,13 @@
 $roboto: Roboto, sans-serif;
 $oxygen: Oxygen, sans-serif;
-$background: #141414;
+$background: #06114f;
 $background-read: #fff;
-$background-header: #6c34c780;
-$background-project: #6f2dda80;
+$background-header: #782cf180;
+$background-project: #782cf180;
 $background-footer: #782cf180;
+$safiro: #f7a579;
+$purple: #9567e0;
+$celeste: #56b6c4;
 
 * {
     margin: 0;
@@ -46,7 +49,7 @@ header {
         align-items: center;
         gap: 20px;
         padding: 20px 80px;
-        box-shadow: 5px 5px 10px rgb(38, 54, 189);
+        box-shadow: 14px 12px 20px $purple;
         text-align: justify;
         font-size: 20px;
         border-radius: 2%;
@@ -102,6 +105,25 @@ main {
         font-family: $oxygen;
     }
 
+    .tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .list {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 48px;
+        }
+    }
+
     .projects {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -115,7 +137,7 @@ main {
             max-width: 300px;
             height: auto;
             background-color: $background-project;
-            box-shadow: 5px 10px 10px rgb(38, 54, 189);
+            box-shadow: 1px 1px 20px $purple;
             border-radius: 2%;
             padding: 20px;
 
@@ -187,7 +209,7 @@ footer {
     .footer-img {
         max-width: 400px;
         min-height: auto;
-        box-shadow: 5px 10px 10px rgb(38, 54, 189);
+        box-shadow: 8px 11px 17px $purple;
     }
 
     .info {
