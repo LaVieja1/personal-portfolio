@@ -4,4 +4,4 @@ Primera versión de mi portfolio personal, contiene información sobre mi y form
 
 ![image](./screenshot.png)
 
-![Visitar página](https://lavieja1.github.io/personal-portfolio/)
+[Visitar página](https://lavieja1.github.io/personal-portfolio/)
