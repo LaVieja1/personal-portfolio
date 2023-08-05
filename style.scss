@@ -33,7 +33,6 @@ header {
     img {
         max-width: 220px;
         min-height: auto;
-        border-radius: 0;
     }
 
     .about-me {
@@ -47,6 +46,7 @@ header {
         box-shadow: 5px 5px 10px rgb(110, 110, 110);
         text-align: justify;
         font-size: 20px;
+        border-radius: 2%;
 
         h1 {
             font-family: $oxygen;
@@ -68,7 +68,7 @@ header {
 }
 
 img {
-    border-radius: 5%;
+    border-radius: 2%;
 }
 
 a, a:visited {
@@ -168,7 +168,7 @@ main {
 }
 
 footer {
-    padding: 40px 100px;
+    padding: 20px 100px;
     background-color: $background-footer;
     width: 100%;
     display: flex;
@@ -181,7 +181,7 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 30px;
+        gap: 10px;
 
         h1 {
             font-family: $oxygen;
@@ -206,6 +206,7 @@ footer {
         }
 
         .contact-links {
+            margin-top: 40px;
             width: 100%;
             display: flex;
             justify-content: flex-start;
@@ -219,7 +220,7 @@ footer {
     }
 
     img {
-        max-width: 600px;
+        max-width: 400px;
         min-height: auto;
     }
 }
